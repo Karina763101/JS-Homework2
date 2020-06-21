@@ -51,7 +51,8 @@ function loadTodo() {
 
 dataInput.addEventListener('keypress', function (keyPressed) {
     if (keyPressed.which === 13) {
-        if (dataInput.value !== '' && dataInput.value.trim() > 0) {
+        console.log(dataInput.value.trim());
+        if (dataInput.value !== '' && dataInput.value.trim() !== '') {
             var newLi = document.createElement('li');
             var newSpan = document.createElement('span');
             newSpan.innerHTML = 'Delete ';
